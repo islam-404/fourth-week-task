@@ -132,6 +132,7 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstItem="Vzg-1F-QjJ" firstAttribute="height" secondItem="fox-wf-2zQ" secondAttribute="height" id="3a7-7L-XpL"/>
                                                 <constraint firstItem="Che-gX-bDp" firstAttribute="leading" secondItem="3et-TM-3sB" secondAttribute="trailing" constant="16" id="6rJ-u7-YSl"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="lQ2-Kx-ufY" secondAttribute="trailing" constant="16" id="A4E-ll-aWM"/>
                                                 <constraint firstItem="lQ2-Kx-ufY" firstAttribute="width" secondItem="kXP-zV-y0q" secondAttribute="width" id="Bub-Eg-r0I"/>
@@ -147,10 +148,12 @@
                                                 <constraint firstAttribute="bottom" secondItem="Vzg-1F-QjJ" secondAttribute="bottom" id="TZ4-IV-d0T"/>
                                                 <constraint firstItem="lQ2-Kx-ufY" firstAttribute="top" secondItem="kXP-zV-y0q" secondAttribute="bottom" constant="12" id="UVq-Eu-ro6"/>
                                                 <constraint firstItem="Che-gX-bDp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lQ2-Kx-ufY" secondAttribute="bottom" constant="12" id="Yo7-i4-n5g"/>
+                                                <constraint firstItem="Vzg-1F-QjJ" firstAttribute="width" secondItem="fox-wf-2zQ" secondAttribute="width" id="gXm-BQ-sOb"/>
                                                 <constraint firstAttribute="bottom" secondItem="bTq-V9-ezB" secondAttribute="bottom" constant="4" id="iYM-eJ-j2L"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3et-TM-3sB" secondAttribute="bottom" constant="33" id="jXr-r6-OWe"/>
                                                 <constraint firstItem="kXP-zV-y0q" firstAttribute="leading" secondItem="3et-TM-3sB" secondAttribute="trailing" constant="16" id="nQD-lh-RB0"/>
                                                 <constraint firstAttribute="bottom" secondItem="fox-wf-2zQ" secondAttribute="bottom" id="woq-HX-BCh"/>
+                                                <constraint firstItem="Vzg-1F-QjJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Che-gX-bDp" secondAttribute="trailing" constant="50" id="znj-qn-maM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
