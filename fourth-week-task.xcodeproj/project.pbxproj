@@ -21,6 +21,7 @@
 		A6D52A5527B353670024D7FF /* BasketNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D52A5427B353670024D7FF /* BasketNetworkService.swift */; };
 		A6D52A5727B3543E0024D7FF /* GetBasketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D52A5627B3543E0024D7FF /* GetBasketResponse.swift */; };
 		A6D52A5927B355360024D7FF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D52A5827B355360024D7FF /* NetworkError.swift */; };
+		D0EC48DA27B3A66E00D6BF96 /* NewNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC48D927B3A66E00D6BF96 /* NewNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A6D52A5427B353670024D7FF /* BasketNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketNetworkService.swift; sourceTree = "<group>"; };
 		A6D52A5627B3543E0024D7FF /* GetBasketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBasketResponse.swift; sourceTree = "<group>"; };
 		A6D52A5827B355360024D7FF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D0EC48D927B3A66E00D6BF96 /* NewNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		A66418D327B2F7DF0053A9A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0EC48D827B3A65900D6BF96 /* NewNEtworkLayer */,
 				A6D52A5A27B355850024D7FF /* Response */,
 				A6D52A4E27B345920024D7FF /* Basket.swift */,
 			);
@@ -178,6 +181,14 @@
 				A6D52A5627B3543E0024D7FF /* GetBasketResponse.swift */,
 			);
 			name = Response;
+			sourceTree = "<group>";
+		};
+		D0EC48D827B3A65900D6BF96 /* NewNEtworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D0EC48D927B3A66E00D6BF96 /* NewNetworkManager.swift */,
+			);
+			name = NewNEtworkLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 				A66418DA27B3173A0053A9A4 /* BasketTableVCCell.swift in Sources */,
 				A6D52A5227B34FC90024D7FF /* NetworkService.swift in Sources */,
 				A6D52A4F27B345920024D7FF /* Basket.swift in Sources */,
+				D0EC48DA27B3A66E00D6BF96 /* NewNetworkManager.swift in Sources */,
 				A66418B427B2F29C0053A9A4 /* AppDelegate.swift in Sources */,
 				A6D52A5527B353670024D7FF /* BasketNetworkService.swift in Sources */,
 				A66418D527B2FD380053A9A4 /* BasketViewController.swift in Sources */,

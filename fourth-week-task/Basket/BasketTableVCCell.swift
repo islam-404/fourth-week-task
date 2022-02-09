@@ -15,36 +15,23 @@ class BasketTableVCCell: UITableViewCell {
     @IBOutlet weak var priceCell: UILabel!
     @IBOutlet weak var imageCell: UIImageView!
     
-    func configure(with basket: Basket) {
+    func configure(with basket: Welcome, andWith image: UIImage) {
         self.titleCell.text = basket.name
         self.subtitleCell.text = basket.description
-        self.priceCell.text = String(basket.price)
+        self.priceCell.text = "\(basket.price ?? 0)$"
         
-//        let image = basket.imageApp
-//        let url = URL(string:"\(image)")
-//        if let data = try? Data(contentsOf: url!)
-//        {
-//            self.imageCell.image = UIImage(data: data)
+//        let imageCell = basket.imageApp
+//        let url = URL(string:"\(imageCell)")
+//        DispatchQueue.global(qos: .background).async {
+//            if let data = try? Data(contentsOf: url!)
+//            {
+//                DispatchQueue.main.async {
+//                    self.imageCell.image = UIImage(data: data)
+//                }
+//            }
 //        }
+        self.imageCell.image = image
         
     }
 }
 
-
-
-
-
-
-
-//
-//
-//override func awakeFromNib() {
-//    super.awakeFromNib()
-//    // Initialization code
-//}
-//
-//override func setSelected(_ selected: Bool, animated: Bool) {
-//    super.setSelected(selected, animated: animated)
-//
-//    // Configure the view for the selected state
-//}
