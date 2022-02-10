@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -158,6 +159,9 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="buttonDec" destination="Vzg-1F-QjJ" id="DaN-FT-Oce"/>
+                                            <outlet property="buttonInc" destination="fox-wf-2zQ" id="0ru-dy-hFY"/>
+                                            <outlet property="countCell" destination="bTq-V9-ezB" id="xdE-Rh-Nie"/>
                                             <outlet property="imageCell" destination="3et-TM-3sB" id="Y28-8Q-Uq8"/>
                                             <outlet property="priceCell" destination="Che-gX-bDp" id="WPd-RH-VOC"/>
                                             <outlet property="subtitleCell" destination="lQ2-Kx-ufY" id="cLy-BL-mCT"/>
@@ -171,8 +175,9 @@
                                     <outlet property="delegate" destination="yD4-ko-DHc" id="0Dw-j6-8EK"/>
                                 </connections>
                             </tableView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="J4A-Zv-OhZ">
-                                <rect key="frame" x="197" y="368" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="J4A-Zv-OhZ">
+                                <rect key="frame" x="188.5" y="359.5" width="37" height="37"/>
+                                <color key="color" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="40D-f7-DC7"/>

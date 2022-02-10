@@ -14,8 +14,13 @@ class BasketTableVCCell: UITableViewCell {
     @IBOutlet weak var subtitleCell: UILabel!
     @IBOutlet weak var priceCell: UILabel!
     @IBOutlet weak var imageCell: UIImageView!
+    @IBOutlet weak var countCell: UILabel!
+    @IBOutlet weak var buttonInc: UIButton!
+    @IBOutlet weak var buttonDec: UIButton!
     
     func configure(with basket: Welcome, andWith image: UIImage) {
+        buttonDec.isHidden = true
+        countCell.isHidden = true
         self.titleCell.text = basket.name
         self.subtitleCell.text = basket.description
         self.priceCell.text = "\(basket.price ?? 0)$"

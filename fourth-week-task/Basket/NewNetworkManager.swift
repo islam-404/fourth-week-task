@@ -1,10 +1,3 @@
-//
-//  NewNetworkManager.swift
-//  fourth-week-task
-//
-//  Created by Grigory Zenkov on 09.02.2022.
-//
-
 import Foundation
 import UIKit
 
@@ -35,6 +28,5 @@ class FoodViewModel {
         let image = UIImage(data: data)
         return image
     }
-    
 }
 
