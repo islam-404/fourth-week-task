@@ -20,7 +20,7 @@ class BasketViewController: UIViewController {
         spinner.startAnimating()
         Task {
             self.dishes = try await FoodViewModel().getAllFood()
-            //print(dishes)
+            print(dishes)
             for item in dishes {
                 let image = try await FoodViewModel().getAllImagesOfFood(for: item.image!)
                 self.images.append(image)
@@ -41,18 +41,13 @@ class BasketViewController: UIViewController {
 }
 
 extension BasketViewController: UITableViewDelegate {
-    override func target(forAction action: Selector, withSender sender: Any?) -> Any? {
-        print(sender!)
-        return ()
-    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        print(indexPath.row)
     }
 }
 
 extension BasketViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(dishes.count)
         return dishes.count
     }
     
@@ -60,7 +55,6 @@ extension BasketViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "basketCell", for: indexPath) as! BasketTableVCCell
         let basket = dishes[indexPath.row]
         let imageForBasket = images[indexPath.row]
-//        print(basket)
         cell.configure(with: basket, andWith: imageForBasket!)
         return cell
     }

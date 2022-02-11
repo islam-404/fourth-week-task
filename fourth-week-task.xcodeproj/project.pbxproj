@@ -16,6 +16,7 @@
 		A66418CA27B2F3540053A9A4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A66418C927B2F3540053A9A4 /* .gitignore */; };
 		A66418D527B2FD380053A9A4 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66418D427B2FD380053A9A4 /* BasketViewController.swift */; };
 		A66418DA27B3173A0053A9A4 /* BasketTableVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66418D927B3173A0053A9A4 /* BasketTableVCCell.swift */; };
+		A6D3FD6F27B5DB18006B125D /* KeyDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D3FD6E27B5DB18006B125D /* KeyDefaults.swift */; };
 		D0EC48DA27B3A66E00D6BF96 /* NewNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC48D927B3A66E00D6BF96 /* NewNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		A66418C927B2F3540053A9A4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A66418D427B2FD380053A9A4 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		A66418D927B3173A0053A9A4 /* BasketTableVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableVCCell.swift; sourceTree = "<group>"; };
+		A6D3FD6E27B5DB18006B125D /* KeyDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDefaults.swift; sourceTree = "<group>"; };
 		D0EC48D927B3A66E00D6BF96 /* NewNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 		A66418D327B2F7DF0053A9A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A6D3FD6E27B5DB18006B125D /* KeyDefaults.swift */,
 				D0EC48D827B3A65900D6BF96 /* NewNEtworkLayer */,
 			);
 			name = Model;
@@ -231,6 +234,7 @@
 			files = (
 				A66418B827B2F29C0053A9A4 /* MainViewController.swift in Sources */,
 				A66418DA27B3173A0053A9A4 /* BasketTableVCCell.swift in Sources */,
+				A6D3FD6F27B5DB18006B125D /* KeyDefaults.swift in Sources */,
 				D0EC48DA27B3A66E00D6BF96 /* NewNetworkManager.swift in Sources */,
 				A66418B427B2F29C0053A9A4 /* AppDelegate.swift in Sources */,
 				A66418D527B2FD380053A9A4 /* BasketViewController.swift in Sources */,

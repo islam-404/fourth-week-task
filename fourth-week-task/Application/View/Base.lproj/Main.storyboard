@@ -96,7 +96,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fox-wf-2zQ">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fox-wf-2zQ">
                                                     <rect key="frame" x="366" y="145" width="32" height="32"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="32" id="SeZ-Oi-8mn"/>
@@ -109,9 +109,15 @@
                                                         </backgroundConfiguration>
                                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="pressedButtonInc:" destination="RzR-jH-g8J" eventType="touchUpInside" id="Tfr-3e-mqL"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTq-V9-ezB">
                                                     <rect key="frame" x="336.5" y="149" width="12.5" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="12.5" id="g6i-E1-HfS"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -129,6 +135,9 @@
                                                         </backgroundConfiguration>
                                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="pressedButtonDec:" destination="RzR-jH-g8J" eventType="touchUpInside" id="XHU-sP-noV"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,7 +163,7 @@
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3et-TM-3sB" secondAttribute="bottom" constant="33" id="jXr-r6-OWe"/>
                                                 <constraint firstItem="kXP-zV-y0q" firstAttribute="leading" secondItem="3et-TM-3sB" secondAttribute="trailing" constant="16" id="nQD-lh-RB0"/>
                                                 <constraint firstAttribute="bottom" secondItem="fox-wf-2zQ" secondAttribute="bottom" id="woq-HX-BCh"/>
-                                                <constraint firstItem="Vzg-1F-QjJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Che-gX-bDp" secondAttribute="trailing" constant="50" id="znj-qn-maM"/>
+                                                <constraint firstItem="Vzg-1F-QjJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Che-gX-bDp" secondAttribute="trailing" constant="10" id="znj-qn-maM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
