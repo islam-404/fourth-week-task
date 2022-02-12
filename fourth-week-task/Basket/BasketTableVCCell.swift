@@ -7,10 +7,7 @@
 
 import UIKit
 
-
-
 class BasketTableVCCell: UITableViewCell {
-
   
     @IBOutlet weak var titleCell: UILabel!
     @IBOutlet weak var subtitleCell: UILabel!
@@ -62,7 +59,9 @@ class BasketTableVCCell: UITableViewCell {
     @IBAction func pressedButtonInc(_ sender: UIButton) {
         incDec(true)
         saveCount(count)
+        if count > 0 {
         showHide(false)
+        }
     }
     
     @IBAction func pressedButtonDec(_ sender: UIButton) {
